@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Pembelajaran - Video & Kuis</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h3>Daftar Materi</h3>
+            <button id="close-sidebar" class="close-btn" aria-label="Tutup sidebar">×</button>
+        </div>
+        <nav class="sidebar-nav" id="sidebar-nav">
+            <!-- Materi list akan di-generate oleh JavaScript -->
+        </nav>
+    </div>
+
+    <!-- Sidebar Overlay -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <button id="open-sidebar" class="menu-toggle" aria-label="Buka sidebar">☰</button>
+        
+        <div class="container">
+            <div class="header">
+                <h1 id="material-title">Loading...</h1>
+                <p id="material-description"></p>
+            </div>
+
+            <div class="content">
+                <div class="video-section">
+                    <div class="video-wrapper">
+                        <div id="player"></div>
+                    </div>
+                    <div class="progress-indicator">
+                        <span class="status-icon">⏳</span>
+                        <span id="status-text">Video belum selesai ditonton</span>
+                    </div>
+                </div>
+
+                <div id="quiz-section" class="quiz-section">
+                    <div class="quiz-header">
+                        <div class="quiz-icon">✨</div>
+                        <h2>Selamat! Video Selesai Ditonton</h2>
+                        <p>Silakan kerjakan kuis berikut untuk menguji pemahaman Anda!</p>
+                    </div>
+
+                    <form id="quiz-form" class="quiz-form">
+                        <!-- Soal-soal akan di-generate oleh JavaScript -->
+                    </form>
+
+                    <button id="submit-quiz" class="quiz-button" type="button">
+                        <span>Selesai & Lihat Hasil</span>
+                    </button>
+
+                    <div id="quiz-results" class="quiz-results"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- YouTube IFrame API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./script.js"></script>
+    <script>
+        // Make sure onYouTubeIframeAPIReady is available globally
+        // This will be handled by the script.js file
+    </script>
+</body>
+</html>

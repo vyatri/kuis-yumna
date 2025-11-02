@@ -172,7 +172,7 @@ function loadMaterial(material) {
     
     statusIcon.textContent = '⏳';
     statusIcon.classList.remove('checked');
-    statusText.textContent = 'Video belum selesai ditonton';
+    statusText.innerHTML = 'Video belum selesai ditonton.<BR />Simak video dengan baik dan pahami materinya, agar anda bisa mengerjakan kuis dengan baik.';
     statusText.style.color = '#6b7280';
     
     quizSection.classList.remove('show');
